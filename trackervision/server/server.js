@@ -8,6 +8,8 @@ const cors = require('cors')
 app.use(cors())
 app.use(express.json())
 
+//call for session id: https://api.themoviedb.org/3/authentication/session/new?api_key=93916c935979931b0ffa32a131a1cf5e
+
 const API_KEY = '93916c935979931b0ffa32a131a1cf5e'
 //exmample api request: https://api.themoviedb.org/3/movie/550?api_key=93916c935979931b0ffa32a131a1cf5e
 
