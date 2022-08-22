@@ -1,7 +1,9 @@
-import express from "express";
-// const express = require("express");
-import cors from "cors";
-import mongoose from "mongoose";
+// import express from "express";
+const express = require("express");
+// import cors from "cors";
+const cors = require('cors')
+// import mongoose from "mongoose";
+const mongoose = require('mongoose')
 
 const app = express();
 app.use(express.json());
