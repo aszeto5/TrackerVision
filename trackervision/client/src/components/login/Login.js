@@ -68,7 +68,7 @@ const navigate = useNavigate()
             <div class="flex items-center justify-center mt-6">
                 <a href="#" target="_blank" class="inline-flex items-center text-xs font-thin text-center text-gray-500 hover:text-gray-700 dark:text-gray-100 dark:hover:text-white"  onClick={navigate.push("/Register")}>
                     <span class="ml-2">
-                        You don&#x27;t have an account?
+                        You don't have an account?
                     </span>
                 </a>
             </div>
