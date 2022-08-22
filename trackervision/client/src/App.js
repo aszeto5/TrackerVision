@@ -16,7 +16,6 @@ function App() {
   })
   return (
     <div className="App">
-      ReactDOM.render(
         <Router>
         <div>
           <Routes>
@@ -29,7 +28,6 @@ function App() {
           </Routes>
         </div>
       </Router>
-      )
     </div>
   );
 }
