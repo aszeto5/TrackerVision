@@ -64,6 +64,6 @@ app.post("/Register",(req,res)=>{
 
 }) 
 
-app.listen(6969,()=>{
+app.listen(8000,()=>{
     console.log("started")
 })

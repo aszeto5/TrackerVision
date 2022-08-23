@@ -1,35 +1,35 @@
-import './App.css';
-import Homepage from "./components/homepage/Homepage"
-import Login from "./components/login/Login"
-import Register from "./components/register/Register"
-import {
-  BrowserRouter as Router,
-  Routes, 
-  Route
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-} from "react-router-dom";
-import {useState} from 'react';
+// pages & components
+import Home from './pages/home/Home'
+import Login from './pages/login/Login';
+import Signup from './pages/register/Register';
+import Navbar from './components/Navbar'
 
 function App() {
-  const [user,setLoginUser] = useState({
-
-  })
   return (
-    <div className="App">
-        <Router>
-        <div>
+    <div className='App'>
+      <BrowserRouter>
+        <Navbar />
+        <div className='pages'>
           <Routes>
-            <Route exact path="/">
-              {
-              user && user._id ? <Homepage/>:<Login/>
-              }<Homepage/></Route>
-              <Route path="/Login"><Login setLoginUser={setLoginUser}/></Route>
-              <Route path="/Register"><Register/></Route>
+            <Route
+              path="/"
+              element= {<Home />}
+            />
+            <Route
+              path="/Login"
+              element= {<Login />}
+            />
+            <Route
+              path="/Signup"
+              element= {<Signup />}
+            />
           </Routes>
         </div>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
 
-export default App;
+export default App
