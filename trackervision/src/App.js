@@ -9,31 +9,13 @@ const FEATURED_API ="https://api.themoviedb.org/3/movie/550?api_key=378cdbed516f
 const SEARCH_API = "https://api.themoviedb.org/3/search/movie?api_key=378cdbed516f65843d50de45ec4d47ae&query="
 
 function App() {
-  const [ movies, setMovies] = useState([]);
+  const movies = ['1', '2', '3'];
 
-  useEffect( () => {
-    fetch(FEATURED_API)
-           .then((res) =>res.json())
-           .then((data) => {
-            setMovies(data.results);
-    });
-    
-    
-  }, []);
-
-
-
-
-
-  return <div>
-    {
-      movies.length > 0 && 
-         movies.map((movie) =>
-        <Movie key ={movie.id}  {...movie}/>
-      )
-    }
-  </div>
-
+  return <div> 
+    {movies.map(movie =>(
+      <Movie/>
+    ))}
+    </div>
 }
-
+  
 export default App;

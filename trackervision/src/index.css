@@ -10,4 +10,38 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  
 }
+ body {
+  background-color: #22254b;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0%;
+ }
+
+ .movie-container {
+  display: flex;
+  flex-wrap: wrap;
+ }
+
+  .movie {
+    background-color: #373b69;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0,0,0.1);
+    overflow: hidden;
+    margin: 1rem;
+    width: 250px;
+
+
+  }
+
+  .movie img {
+    max-width: 100% ;
+  }
+
+  .movie-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }

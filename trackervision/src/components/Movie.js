@@ -2,12 +2,11 @@ import React from "react";
 
 
 
-const IMG_API = "https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg";
- const Movie =({tittle, poster_path, overview, vote_average}) => (
-    <div className="movie"> 
-    <img src={IMG_API + poster_path}  alt ={tittle} />
+const IMG_API = "https://api.themoviedb.org/3/movie/550/images?api_key=378cdbed516f65843d50de45ec4d47ae&language=en-US&include_image_language=en,null"
 
-    </div>
+ const Movie = () => (
+   <div className="movie">
+      this is a Movie </div>
  );
 
  export default Movie;
