@@ -1,4 +1,4 @@
-require('dotenv').config
+require('dotenv').config()
 
 const express = require('express')
 const mongoose = require('mongoose')
@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 app.use('/api/user', userRoutes)
 
 //connect to db
-mongoose.connect('mongodb+srv://adrianszeto:Szeto8741@cluster0.bqxsxfz.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect(process.env.MONGO_URI)
     .then(() => {
         // listen for requests
         app.listen(process.env.PORT, () => {
