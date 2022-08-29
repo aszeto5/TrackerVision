@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/TrackerVision/static/css/main.d4d19e5a.css",
+    "main.js": "/TrackerVision/static/js/main.970df542.js",
+    "static/js/787.7c42db31.chunk.js": "/TrackerVision/static/js/787.7c42db31.chunk.js",
+    "static/media/logo.svg": "/TrackerVision/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/TrackerVision/index.html",
+    "main.d4d19e5a.css.map": "/TrackerVision/static/css/main.d4d19e5a.css.map",
+    "main.970df542.js.map": "/TrackerVision/static/js/main.970df542.js.map",
+    "787.7c42db31.chunk.js.map": "/TrackerVision/static/js/787.7c42db31.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d4d19e5a.css",
+    "static/js/main.970df542.js"
+  ]
+}
